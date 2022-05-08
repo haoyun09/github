@@ -1,10 +1,21 @@
-1.根据项目名称搜索
-  in:name name
- 2.根据项目描述搜索
-  in:description name
- 3.增加根据火热程度搜索
-  start:>num 
-  fork:>num
- 4.增加根据编程语言搜索
-  language:java
- 
+1.关键字 in
+    语法 ：关键字 in:
+    例子 ：netty in:name //根据项目名称搜索，查找名称中包含netty的内容
+           netty in:name,description //根据项目描述搜索，逗号分隔，是 || (或)的关系，指的是查询名称，或者描述中包含netty的内容
+2.根据火热程度搜索
+  大小与等于
+    语法： 关键字 stars:>= 数量 forks:>=数量 
+    例子： springboot stars:>=5000 //搜索springboot有关star数>=5000的内容
+           springboot stars:>=5000 forks:>=5000 //搜索springboot 的star>=5000，且fork数>=5000的内容
+    可单独搜索，也可组合搜索，中间用空格隔开，是&（且）的关系。
+  范围查询
+    语法： 关键字 stars:范围1..范围2
+    例子： springboot stars:4000..5000 //搜索star数在 4000到500的springboot相关内容，..相当于mysql中between and 的作用
+3.关键字 awesome
+  一般是指的学习，书籍，工具类，插件类相关的系列的集合。可以有效节约时间，找到别人收集好的内容
+  例子： awesome springboot
+4.关键字 
+  查询某位用户的相关内容，比如某位大佬
+  例子：user:ityouknow
+5.根据编程语言搜索
+  例子：location:Beijing language:java 
