@@ -13,9 +13,9 @@
     例子： springboot stars:4000..5000 //搜索star数在 4000到500的springboot相关内容，..相当于mysql中between and 的作用
 3.关键字 awesome
   一般是指的学习，书籍，工具类，插件类相关的系列的集合。可以有效节约时间，找到别人收集好的内容
-  例子： awesome springboot
+    例子： awesome springboot
 4.关键字 
   查询某位用户的相关内容，比如某位大佬
-  例子：user:ityouknow
+    例子：user:ityouknow
 5.根据编程语言搜索
-  例子：location:Beijing language:java 
+    例子：location:Beijing language:java 
